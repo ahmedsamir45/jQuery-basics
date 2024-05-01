@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- code 1:hide and dblclick show -->
+    <script>
+
+        $(document).ready(function(){
+            $(".btn1").click(
+                function(){
+                    $("#p1").hide(2000)
+                })
+            $(".btn1").dblclick(function(){
+                    $("#p1").show(2000)
+            })
+        });
+    </script>
+    <!-- code 2 -->
+    <script>
+        $(document).ready(function(){
+            $(".btn2").click(function(){
+                $("#p2").toggle(3000)
+            })
+        })
+
+    </script>
+    <!-- code 3 -->
+    <script>
+        $(document).ready(function(){
+            $(".btn3").click(function(){
+                $("#p3").fadeOut(2000)
+                
+            })
+        })
+        $(document).ready(function(){
+            $(".btn3").dblclick(function(){
+                $("#p3").fadeIn(2000)
+        
+            })
+        })
+    </script>
+    <!-- code 4 -->
+    <script>
+        $(document).ready(function(){
+            $(".btn4").click(function(){
+                $("#p4").fadeToggle(2000)
+                
+            })
+        })
+    </script>
+    <!-- code 5 -->
+    <script>
+        $(document).ready(function(){
+            $(".btn5").click(function(){
+                $("#p5").slideUp(2000)
+                
+            })
+        })
+            $(document).ready(function(){
+                $(".btn5").dblclick(function(){
+                    $("#p5").slideDown(2000)
+            
+                })
+        
+        })
+    </script>
+    <!-- code 6 -->
+    <script>
+        $(document).ready(function(){
+            $(".btn6").click(function(){
+                $("#p6").slideToggle(2000)
+                
+            })
+        })
+    </script>
+
+       <!-- code 7 -->
+       <script>
+        $(document).ready(function(){
+            $(".btn7").mouseenter(function(){
+                $("#p7").hide(2000)
+                
+            })
+        })
+        $(document).ready(function(){
+            $(".btn7").mouseleave(function(){
+                $("#p7").show(2000)
+        
+            })
+        })
+    </script>
+       <!-- code 8 -->
+       <script>
+        $(document).ready(function(){
+            $("#bn1").click(function(){
+                $("#para1").toggle(2000)
+                
+            })
+        })
+        $(document).ready(function(){
+            $("#bn2").click(function(){
+                $("#para2").fadeToggle(2000)
+        
+            })
+        })
+        $(document).ready(function(){
+            $("#bn3").click(function(){
+                $("#para3").slideToggle(2000)
+        
+            })
+        })
+    </script>
+    <!-- code 9 focus and blur -->
+    <script>
+        $(document).ready(function(){
+            $("#inp").focus(function(){
+                $("#pp").show(2000)
+        
+            })
+        })
+        $(document).ready(function(){
+            $("#inp").blur(function(){
+                $("#pp").hide(2000)
+        
+            })
+        })
+    </script>
+    <!-- code 10 animation code  -->
+    <script>
+        $(document).ready(function(){
+            $("#dd").animate({
+                left:"400px"
+            })
+            $("#dd").animate({
+                top:"200px"
+            })
+            $("#dd").animate({
+                left:"100px"
+            })
+            $("#dd").css({
+                backgroundColor:"brown"
+            })
+        
+        })
+    </script>
+</head>
+<style>
+    #pp{
+        display: none;
+    }
+    #dd{
+        position: relative;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+        color: antiquewhite;
+        transition: 3s;
+    }
+</style>
+<body>
+    <!-- start animation code  -->
+        <div id="dd">
+            <h3>learn jquery</h3>
+        </div>
+    <!-- end animation code  -->
+
+<hr>
+<hr>
+    <!-- stasrt code1  -->
+    <div>
+        <button class="btn1">hide</button>
+        <p id="p1">lets learn jquery</p>
+    </div>
+
+    <!-- end of code 1-->
+<hr>
+    <!-- start of code 2 -->
+    <div>
+        <button class="btn2">toggle</button>
+        <p id="p2">3bas el developer byhbk</p>
+    </div>
+    <!-- end of code2 -->
+<hr>
+    <!-- start code 3 -->
+    <div>
+        <button class="btn3">fadeOut</button>
+        <p id="p3">sadam hessin rakeb amrica</p>
+    </div>
+    <!-- end code 3 -->
+<hr>
+    <!-- start code 4 -->
+    <div>
+        <button class="btn4">fadetoggle</button>
+        <p id="p4">hazoqa rakeb el 3ntil</p>
+    </div>
+    <!-- end code 4 -->
+    <hr>
+    <!-- start code 5 -->
+    <div>
+        <button class="btn5">slide</button>
+        <p id="p5">hazoqa rakeb el tenen w shbo</p>
+    </div>
+    <!-- end code 5 -->
+    <hr>
+    <!-- start code 6 -->
+    <div>
+        <button class="btn6">slideToggle</button>
+        <p id="p6">sergo bosqits rakeb haland</p>
+    </div>
+    <!-- end code 6 -->
+    <hr>
+        <!-- stasrt code7  -->
+        <div>
+            <button class="btn7">mouse</button>
+            <p id="p7">lets learn jquery</p>
+        </div>
+    
+        <!-- end of code 7-->
+        <hr>
+        <hr>
+        <hr>
+        <!-- stasrt code 8  -->
+        <div>
+            <button class="btn8">mouse</button>
+            <p id="p8">lets learn jquery</p>
+            <br>
+            <hr>
+            <button id="bn1">toggle</button>
+            <button id="bn2">fadeToggle</button>
+            <button id="bn3">slideToggle</button>
+            <br>
+            <p id="para1">pargraph one</p>
+            <p id="para2">pargraph two</p>
+            <p id="para3">pargraph three</p>
+        </div>
+    <div>
+       <hr>
+        <label for="">Email:</label><br>
+        <input type="text" id="inp">
+
+        <p id="pp">write your email</p>
+    </div>
+        <!-- end of code 8-->
+</body>
+</html>
